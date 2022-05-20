@@ -25,6 +25,15 @@ class Solution:
                   0
                         1
                             2....
+
+        How code runs: 
+        defaultdict(<class 'list'>, {})
+        defaultdict(<class 'list'>, {'aet': ['eat']})
+        defaultdict(<class 'list'>, {'aet': ['eat', 'tea']})
+        defaultdict(<class 'list'>, {'aet': ['eat', 'tea'], 'ant': ['tan']})
+        defaultdict(<class 'list'>, {'aet': ['eat', 'tea', 'ate'], 'ant': ['tan']})
+        defaultdict(<class 'list'>, {'aet': ['eat', 'tea', 'ate'], 'ant': ['tan', 'nat']})
+        defaultdict(<class 'list'>, {'aet': ['eat', 'tea', 'ate'], 'ant': ['tan', 'nat'], 'abt': ['bat']})
         """
         
         charDict = collections.defaultdict(list)
