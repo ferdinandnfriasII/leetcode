@@ -31,13 +31,16 @@ class Solution:
         res = []
         
         for num in range(left, right + 1):
+            #keep track of number of digits in num that pass self dividing test
             count = 0
             for digit in str(num):
+                #if num contains digits equal to zero or there is a remainder then break from loop
                 if digit == '0' or num % int(digit) != 0:
                     break
-                    
+                
+                #if passes then increase count
                 count += 1
+                #if all numbers pass then append self dividing num to the result
                 if count == len(str(num)):
                     res.append(num)
-                    
         return res
